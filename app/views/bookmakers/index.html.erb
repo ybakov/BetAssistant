@@ -1,0 +1,9 @@
+<div id="bookmakers">
+  <% @bookmakers.each do |bookmaker| %>
+    <div class="bookmaker">
+      <div class="bookmaker_name">
+        <span><%= bookmaker.name %>:</span> <%= link_to "#{bookmaker.web_site}", bookmaker.web_site %>
+      </div>
+    </div>
+  <% end %>
+</div>
